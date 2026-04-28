@@ -1,0 +1,25 @@
+:root { --bg:#ececec; --card:#e3e3e5; --text:#141414; }
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text)}
+.page{max-width:980px;margin:0 auto;padding:24px 18px 48px}
+.topbar{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:500;margin-bottom:90px}
+.topbar nav{display:flex;gap:24px}.topbar a{color:var(--text);text-decoration:none}
+.hero{text-align:center;margin-bottom:72px}
+.avatar{width:92px;height:92px;border-radius:20px;margin:0 auto 24px;background:linear-gradient(145deg,#7f8596,#37445b)}
+.hero h1{font-size:46px;line-height:1.1;margin:0;font-weight:700}
+.hero p{margin-top:10px;font-size:40px;color:#555}
+.projects{display:grid;gap:16px}.card{background:var(--card);border-radius:22px;padding:18px}
+.card p{color:#6c6c6c;margin-top:8px}.card-head{display:flex;justify-content:space-between;align-items:center}
+.card-head h3{margin:0;font-size:19px}
+.tag{font-size:12px;color:#666;background:#d9d9d9;border-radius:999px;padding:6px 11px}
+.next{width:34px;height:34px;border-radius:50%;background:#1890ff;color:#fff;display:grid;place-content:center;font-size:27px}
+.tall{min-height:460px}.medium{min-height:330px}.small{min-height:220px;display:grid;place-items:center}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.phones{margin:30px auto 0;display:flex;justify-content:center;gap:20px}
+.phone{width:210px;height:410px;border-radius:38px;background:linear-gradient(#f6f6f6,#ddd);border:5px solid #252525}
+.phones.three .phone{width:180px;height:365px}
+.logos{width:160px;height:56px;margin:100px auto 0;background:radial-gradient(circle at 20% 50%,#ff4228 0 26%,transparent 27%),radial-gradient(circle at 78% 50%,#3ac75f 0 26%,transparent 27%)}
+.watch{width:130px;height:130px;border-radius:22px;background:#111}.watch.alt{background:#1b1d28}
+.laptop{margin:58px auto 0;width:540px;height:280px;background:linear-gradient(#d9d9d9 0 63%,#4f535a 63%);border-radius:10px 10px 22px 22px}
+.bottom{margin-top:84px;margin-bottom:0}
+@media (max-width:860px){.hero h1{font-size:34px}.hero p{font-size:28px}.split{grid-template-columns:1fr}.phone{width:160px;height:320px}.phones.three .phone{width:130px;height:270px}.laptop{width:100%}}
